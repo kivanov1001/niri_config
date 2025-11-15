@@ -1,0 +1,19 @@
+{
+     "niri/workspaces": {
+        "on-click": "activate",
+        "active-only": false, 
+         "disable-scroll": true,
+         "all-outputs": true,
+         "warp-on-scroll": false,
+         "format": "{}",
+        "format-icons": {
+            "urgent": "",
+            "active": "",
+            "default": ""
+        },
+        "persistent-workspaces": {
+            "*": 5
+        }       
+
+     }
+}

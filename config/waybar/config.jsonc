@@ -1,0 +1,28 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top", // Waybar at top layer
+    "mode": "dock",
+    "position": "top", // Waybar position (top|bottom|left|right)
+    //"height": 10, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 2, // Gaps between modules (4px)
+    "exclusive": false,
+    "passthrough": false,
+    "reload_style_on_change": true,
+    "include": [
+    "~/.config/waybar/modules/modules.jsonc",
+    "~/.config/waybar/modules/audio.json",
+    "~/.config/waybar/modules/applauncher.json",
+    "~/.config/waybar/modules/separator.json",
+    "~/.config/waybar/modules/workspaces.json",
+    "~/.config/waybar/modules/window.json",
+    "~/.config/waybar/modules/network.json",
+    "~/.config/waybar/modules/layout.json",
+    "~/.config/waybar/modules/bluetooth.json",
+    "~/.config/waybar/modules/clock.json",
+    "~/.config/waybar/modules/power.json",
+    "~/.config/waybar/modules/powerprofile.json",
+    "~/.config/waybar/modules/language.json",
+    "~/.config/waybar/modules/battery.json"]
+    
+}

@@ -1,0 +1,9 @@
+{
+    "niri/language":{
+     "format": "   {}",
+     "format-en": "US",
+     "format-bg": "BG",
+     "keyboard-name": "at-translated-set-2-keyboard",
+     "on-click": "niri msg action switch-layout next"   
+    }
+}

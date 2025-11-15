@@ -1,0 +1,8 @@
+{
+"custom/launcher": {
+      //"format": "",
+      "format":"Apps",
+      "on-click": "rofi -show drun -config ~/.config/niri/rofi.rasi",
+      "tooltip": false
+    }
+}

@@ -1,0 +1,21 @@
+{
+   "modules-left": [
+        "custom/launcher",
+        "custom/sep",
+        "niri/window"
+    ],
+    "modules-center": [
+        "niri/workspaces",
+        "power-profiles-daemon"
+    ],
+    "modules-right": [
+        "tray",
+        "pulseaudio",
+        "bluetooth",
+        "keyboard-state",
+        "niri/language",
+        "battery",
+        "clock",
+        "custom/power"
+    ]
+}

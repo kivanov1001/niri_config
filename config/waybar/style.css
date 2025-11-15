@@ -1,0 +1,130 @@
+@import url("./colors/colors.css");
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    
+}
+
+.module{
+    font-size: 13px;
+    background-color: @background;
+    color: @text;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 0px 6px 0px 6px;
+    margin: 2px 2px 2px 2px;
+    border: solid 0px @border;
+    box-shadow: inset -1px -1px @border;
+    font-family:  OpenSans,FontAwesome;
+}
+
+.module:hover{
+   background-color:@background; 
+   opacity: 0.8; 
+}
+
+window#waybar {
+   background: transparent;
+   opacity: 1;
+}
+
+window#waybar.hidden {
+    opacity: 0.5;
+}
+
+
+#custom-launcher:hover {
+    background: @background;
+    opacity: 0.4; 
+}
+
+#custom-sep{
+   color: @text;
+   background-color:transparent;
+   border-color:transparent;
+   font-weight: bold; 
+   margin: 1px 10px 1px 5px;
+   font-size: 16px;
+   box-shadow: inset 0px 0px @border;
+}
+
+
+#custom-layout {
+    border-radius: 16px;
+    padding: 0px 11px 0px 11px;
+    margin: 0px 3px 0px 0px;
+}
+#power-profiles-daemon{
+    border-radius: 16px;
+    font-size: 16px;
+}
+
+#custom-power{
+    border-radius: 16px;
+    font-size: 16px;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 6px 0px 3px;
+}
+
+#workspaces {
+    background: @workspaces;
+    margin: 1px 0px 1px 0px;
+    padding: 3px 1px 3px 1px;
+    border-radius: 15px;
+    border: solid 0px @border; 
+    opacity: 0.5;   
+    font-size:5px;
+    box-shadow: inset 0px 0px @border;
+    font-weight: normal;
+    font-family:  JetBrains;
+}
+#workspaces button {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 3px 0px 3px;
+    border-radius: 15px;
+    background-color: @border;
+    transition: all 0.2s ease-in-out;
+    min-width: 35px;
+    border: solid 0px @border;
+    font-size:5px;
+    font-weight: normal;
+    box-shadow: inset 0px 0px @border;
+}
+
+#workspaces button.active {
+    background-color: @text;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 3px 0px 3px;
+    border-radius: 15px;
+    min-width: 35px;
+    transition: all 0.2s ease-in-out;
+    border: solid 0px @border;
+    font-size:5px;
+    font-weight: normal;
+    box-shadow: inset 0px 0px @border;
+    
+}
+
+#workspaces button:hover {
+    background-color: @border;
+    border-radius: 15px;
+    min-width: 35px;
+    border: solid 0px @border;
+    opacity:1;
+    font-size:5px;
+    font-weight: normal;
+    box-shadow: inset 0px 0px @border;
+}
+
+#workspaces button.active:hover {
+    background-color: @text;
+    border-radius: 15px;
+    min-width: 35px;
+    border-width:0px;
+    transition: all 0.2s ease-in-out;
+    border: solid 0px @border;
+    opacity:1;
+    font-size:5px;
+    font-weight: normal;
+    box-shadow: inset 0px 0px @border;
+}

@@ -1,0 +1,8 @@
+{
+"niri/window":{
+        "separate-outputs": true,
+        "format": "{title}",
+        "icon": true,
+        "icon-size": 18
+    }
+}

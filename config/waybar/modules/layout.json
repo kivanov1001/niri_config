@@ -1,0 +1,9 @@
+{
+    "custom/layout":{
+        "exec": "hyprctl getoption general:layout | grep -oP \"(?<=str:\\s).*\" | sed \"s/master/M/g\" | sed \"s/dwindle/D/g\"",
+        "interval": 1,
+        "format":"{}",
+        "on-click":"bash ~/.config/waybar/modules/scripts/change_layout.sh",
+        "tooltip": false
+    }
+}
