@@ -1,0 +1,59 @@
+/**************************************ОСНОВНИ ПАКЕТИ***********************************************/
+sudo pacman -Syu
+
+yay -S --noconfirm niri hyprlock kitty nautilus xwayland-satellite ttf-jetbrains-mono ttf-font-awesome ttf-nerd-fonts-symbols woff2-font-awesome network-manager-applet pavucontrol blueberry wlogout waybar rofi-wayland-git polkit-gnome swaybg swaync zsh starship xdg-desktop-portal-gtk xdg-desktop-portal-gnome gnome-keyring brave-bin
+
+Описание:
+niri - Wayland Window Compositor - https://github.com/YaLTeR/niri/wiki
+hyprlock - Заключване на екрана (част от hyprland еко системата)
+kitty - terminal
+nautilus - Files(GNOME) - file explorer
+xwayland-satellite - Използва се от niri за поддръжка на XOrg приложения
+ttf-jetbrains-mono ttf-font-awesome ttf-nerd-fonts-symbols woff2-font-awesome - шрифтове
+network-manager-applet - applet за управление на мрежата
+pavucontrol - applet за управление на звука
+blueberry - applet за управление на bluetooth
+wlogout - App за shut down/restart/lock/suspend/....
+waybar - Bar отгоре на екрана
+rofi - App launcher
+polkit-gnome - Poolkit autentification for gnome(прозорец за парола когато трябва)
+swaybg - Simple wallpaper app
+swaync - notifications
+
+zsh - treminal shell(надгражда bash). За да се използва от терминала трябва да се изпълни командата chsh -s /bin/zsh
+Полезни плъгини могат да се добавят най-лесно с zsh4humans ,  или lazy.zsh(малко е раздут)
+
+starship - decorator for terminal shell. За да се стартира се добавя:
+ eval "$(starship init zsh)" най-отдолу във файл ~/.zshrc
+  
+xdg-desktop-portal-gtk xdg-desktop-portal-gnome gnome-keyring - Gnome системни пакети необходими на  niri
+brave-bin - Brave Browser(може да не се инсталира и да се замени с кой да е друг браузър в "~/.config/niri/config.kdl" след копиране на фаловете от config директорията)
+
+/*******************************КОНФИГУРАЦИОННИ ФАЙЛОВЕ*********************************************/
+cp -r /config ~/.config
+
+~/.config/niri/config.kdl - конфигурация на niri
+~/.config/niri/rofi.rasi - декорация на rofi
+~/.config/niri/wallpaper.jpg - Картинка използвана за wallpaper от swaybg
+~/.config/waybar/*  -  конфигурация и декорация на waybar
+~/.config/kitty/* - конфигурация на kitty
+~/.config/wlogout/* - конфигурация на wlogout
+~/.config/starship.toml - конфигурация на starship
+
+
+Резолюция на монитора :
+Настроена е на 1920x1080@60. Мониторите могат да се проверят с команда niri msg outputs, след логване в нири
+За да се настрои друга резолюция се променя ~/.config/niri/config.kdl
+
+output "eDP-1" {
+    mode "1920x1080@60.056"
+    
+/*******************************ВИЗУАЛНИ GNOME/SDDM*********************************************/    
+yay -S --noconfirm sddm-sugar-candy-git nwg-look gnome-shell gnome-themes-extra
+sddm-sugar-candy-git -  Скин за sddm
+nwg-look gnome-shell gnome-themes-extra - GNOME теми и декорации
+през  nwg-look  може да се избере тема за GNOME приложенията . По подразбиране има Adwaita. Но може да се свали и инсталира коя да е тема от https://www.gnome-look.org/browse?cat=135&ord=latest. За целта се прави папка ~/.themes и файловете се копират/разархивират в нея
+
+За премахване на close/minimize/maximize бутоните на GNOME приложенията се изплнява команда:
+gsettings set org.gnome.desktop.wm.preferences button-layout : 
+
