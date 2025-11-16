@@ -30,7 +30,7 @@ xdg-desktop-portal-gtk xdg-desktop-portal-gnome gnome-keyring - Gnome систе
 brave-bin - Brave Browser(може да не се инсталира и да се замени с кой да е друг браузър в "~/.config/niri/config.kdl" след копиране на фаловете от config директорията)
 
 /*******************************КОНФИГУРАЦИОННИ ФАЙЛОВЕ*********************************************/
-cp -r /config ~/.config
+cp -r ./config ~/.config
 
 ~/.config/niri/config.kdl - конфигурация на niri
 ~/.config/niri/rofi.rasi - декорация на rofi
